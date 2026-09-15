@@ -1,0 +1,218 @@
+body {
+    color: #40514E;
+    margin: 0;
+    /* This will work on inline-block elements or block elements with full width */
+    text-align: center;
+    /* it will apply on all the body */
+    font-family: "Merriweather", serif;
+}
+
+h1 {
+    /*-- 100% = 16px = 1em,    so  (70px/16) * 100 = 437.5% = 4.375em
+    (% and em) are Dynamic font-sizes (will change if we change font-size of the browser),
+    while px is static (does not change with changing the browser's font-size).
+    rem (root em) means if if there is a font-size defined in parent element of h1(i.e body here),
+    rem will ignore that font-size of parent and will stay to the current font-size of h1.
+    rem will not affected by any upstream font-size changes. */
+    font-size: 4.375rem;
+    /* top, right, bottom, left */
+    margin: 50px auto 0 auto;
+    font-family: "Sacramento", cursive;
+    color: #66BFBF;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.875rem;
+    color: #66BFBF;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    color: #11999E;
+}
+
+.subtitle {
+    font-weight: normal;
+}
+
+.pro {
+    font-style: italic;
+    font-weight: bold;
+}
+
+p {
+    line-height: 2;
+}
+
+hr {
+    border: dotted #EAF6F6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+a {
+    color: #11999E;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 20px;
+    /* to remove underlines from text of anchor tags */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EAF6F6;
+}
+
+.top-container {
+    background-color: #E4F9F5;
+    position: relative;
+    padding-top: 150px;
+}
+
+.middle-container {
+    /* 100px for top, 0px for left and right, and 70px for bottom */
+    margin: 50px 0 70px;
+}
+
+.bottom-container {
+    background-color: #66BFBF;
+    /* 50px at top, 0px at left and right, and 20px at bottom */
+    padding: 50px 0 20px;
+}
+
+.top-cloud {
+    width: 15%;
+    position: absolute;
+    right: 200px;
+    top: 40px;
+}
+
+.bottom-cloud {
+    width: 15%;
+    position: absolute;
+    left: 140px;
+    bottom: 220px;
+}
+
+.profile-img {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.intro {
+    width: 30%;
+    margin: auto;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+
+.code-img {
+    width: 25%;
+    /* float: left; will make the image to be on the left side of the text. And will wrap the text
+    arround the image within the same line. while,
+    clear: is anti float, it will de-wrap the text we want to not wrap arrond the image. */
+    float: left;
+    margin-right: 30px;
+}
+
+.chilli-img {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.contact-message {
+    width: 40%;
+    /* 40px from top, auto from left and right, and 60px from bottom */
+    margin: 40px auto 60px;
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+}
+
+.copywrite {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+}
+
+
+/* Padding: is the space b/w the text and the elemet edge (border) */
+/* margin: is the space between the elements */
+
+/* Display: Property shows that how much width can an element take out of the whole
+width of the screen on a webpage.
+Display property has 4 different values.
+1) Block: It will take all the width of the screen. And it will not allow other elements
+within the same line. Some of the html elements are by default block elements i.e
+<p>, <h1> to <h6>, <div>, <ol>, <ul>, <li>, <form> etc.
+We can change the width of block elements upto whatever we want.
+******************************************************************************
+2) Inline: Inline elements only takes as much space (width) as they need. It do not take
+all the width of the screen. It also allow  other elements netx to it within the same line.
+Some of the common inline html elements are <span>, <a> etc.
+We cannot change the width of inline elemets.
+******************************************************************************
+3)Inline-Block: It has both the block and inline property. We can change its width (Block property)
+and also we can set them wintin the same line next to each other (inline property).
+<img> in html can act as an Inline-Block elemet.
+******************************************************************************
+4)None: An element with dislay: None will remove that element from the screen.
+******************************************************************************
+*/
+
+
+/* Position: This property of css shows that where an element should be positioned. Whether an
+element can be put on top of another element, behind it, to its left or to its right.
+Html has some rules without any css, that children elements will stack on top of parent elements.
+e.g  <div><h1><span> mnop </span></h1></div>
+So here h1 will stack on top of div, and span will stack on top of h1.
+*************************************************************************
+Position property has 4 main values.
+Static: Here all html elements are static in osition by default. Means go along with the html rules
+and keep to the default html flow.
+Each element of html has the position: static; by default.
+*************************************************************************
+Relative: To position (Adding a margin to) the element that we select relative to where the element should have been.
+It will not affect the flow of html, means not disturb position of the other elements.
+Its coordinates are (top, bottom, left, right). eg
+position: relative;
+left: 30px;   (it will move the element 30px from left to right)
+top: 30px;   (it will move the element 30px from top to bottom)
+*************************************************************************
+Absolute: To position (adding amargin to) the element relitive to its parent. If there is no parent,
+then its parent will be body by default.
+It does affect the flow of html, means it will disturb position of the other elements.
+*************************************************************************
+Fixed: It fixes position of the element on its place during scrolling.
+*************************************************************************
+*/
